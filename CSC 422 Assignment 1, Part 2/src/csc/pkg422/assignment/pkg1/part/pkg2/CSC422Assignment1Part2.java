@@ -113,8 +113,8 @@ System.out.println(); // Prints the line
 
 }
 
-// This is our updatePet method
-public static void updatePet() {
+// This is our petUpdate method
+public static void petUpdate() {
 
 // This prints all the pets for displayAllPets
 displayAllPets();
@@ -146,8 +146,6 @@ name = input.substring(0, i);
 
 int age = Integer.parseInt(input.substring(i + 1)); // This is our age which is an int and parses the input substring
 
-// update details.
-// get the old name of the pet here before changing it
 
 String oldName = pets[ID].getName(); // This is our string oldName which equals the pets ID and get the name
 
@@ -162,8 +160,8 @@ System.out.println(oldName + " " + oldAge + " changed to " + name + " " + age + 
 
 }
 
-// This is our searchPetByName method
-public static void SearchPetByName() {
+// This is our SearchNameByPet method
+public static void SearchNameByPet() {
 
     System.out.println("Enter a name to search: "); // Prompting the enter a name to search 
 
@@ -197,8 +195,8 @@ System.out.printf("+-------------------------+%n"); // Printing the dashes using
 System.out.println(numRowsInSet + " rows in set."); // Printing the numRowsInSet and get the rows in set
 }
 
-// This is our SearchPetByAge method
-public static void SearchPetByAge() {
+// This is our SearchAgeByPet method
+public static void SearchAgeByPet() {
 
     System.out.println("Enter age to search: "); // Prompting the enter age to search
 
@@ -238,7 +236,7 @@ public static void SearchPetByAge() {
   // This is our printHeader method
 public static void printHeader() {
 
-    System.out.println("--------|ID|Name |Age|-------"); // Prints the ID, Name and Age
+    System.out.println("--------|ID|Name |Age|-------"); // Prints the header ID, Name and Age
 }
 
 // This is our printFooter method
@@ -247,8 +245,8 @@ public static void printFooter() {
     System.out.println("+----------------+" + petCount + " rows of data"); // Prints the dashes plus the petCount plus rows of data
 }
 
-// This is our removePet method
-public static void removePet() {
+// This is our petRemove method
+public static void petRemove() {
 
 // This prints all the pets for displayAllPets
 displayAllPets();
@@ -334,28 +332,28 @@ while (true) {
 
      case 3: {
 
-    updatePet(); // This is for updatePet which is case 2
+    petUpdate(); // This is for petUpdate which is case 2
 
     break;
 }
 
     case 4: {
 
-    removePet(); // This is for removePet which is case 4
+    petRemove(); // This is for petRemove which is case 4
 
     break;
 }
 
      case 5: {
 
-    SearchPetByName(); // This is for serachPetByName which is case
+    SearchNameByPet(); // This is for serachNameByPet which is case
 
     break;
 }
 
     case 6: {
 
-    SearchPetByAge(); // This is for searchPetByAge which is case 6
+    SearchAgeByPet(); // This is for searchAgeByPet which is case 6
 
     break;
 }
